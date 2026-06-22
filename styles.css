@@ -773,6 +773,16 @@ h3 {
   font-size: 12px;
 }
 
+/* ─── LANG TRANSITION ─── */
+
+[data-i18n] {
+  transition: opacity 200ms ease;
+}
+
+html.is-switching-lang [data-i18n] {
+  opacity: 0;
+}
+
 /* ─── REVEAL ─── */
 
 [data-reveal] {
