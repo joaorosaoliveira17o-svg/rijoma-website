@@ -371,23 +371,54 @@
       });
 
       const langBtn = document.querySelector("[data-lang-toggle]");
+      // Lock section heights to the max of both languages so layout never shifts
+      const sections = document.querySelectorAll(
+        ".hero-content, .statement, .section-copy, .production-copy, .detail-band div, .section-heading, .product-list, .custom-grid, .contact-copy, .contact-panel-wrap"
+      );
+
+      function applyLang(lang) {
+        document.documentElement.lang = lang;
+        langBtn.textContent = lang === "pt" ? "EN" : "PT";
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (lang === "en" && translations.en[key]) {
+            el.innerHTML = translations.en[key];
+          } else {
+            el.innerHTML = originals[key];
+          }
+        });
+      }
+
+      // Measure both languages and lock to the taller height
+      (function lockHeights() {
+        sections.forEach((s) => s.style.minHeight = "");
+        const ptHeights = [...sections].map((s) => s.offsetHeight);
+        applyLang("en");
+        const enHeights = [...sections].map((s) => s.offsetHeight);
+        applyLang("pt");
+        sections.forEach((s, i) => {
+          s.style.minHeight = Math.max(ptHeights[i], enHeights[i]) + "px";
+        });
+      })();
+
+      window.addEventListener("resize", () => {
+        sections.forEach((s) => s.style.minHeight = "");
+        const h1 = [...sections].map((s) => s.offsetHeight);
+        const prevLang = currentLang;
+        applyLang(currentLang === "pt" ? "en" : "pt");
+        const h2 = [...sections].map((s) => s.offsetHeight);
+        applyLang(prevLang);
+        sections.forEach((s, i) => {
+          s.style.minHeight = Math.max(h1[i], h2[i]) + "px";
+        });
+      });
+
       langBtn.addEventListener("click", () => {
         document.documentElement.classList.add("is-switching-lang");
 
         setTimeout(() => {
           currentLang = currentLang === "pt" ? "en" : "pt";
-          document.documentElement.lang = currentLang;
-          langBtn.textContent = currentLang === "pt" ? "EN" : "PT";
-
-          document.querySelectorAll("[data-i18n]").forEach((el) => {
-            const key = el.getAttribute("data-i18n");
-            if (currentLang === "en" && translations.en[key]) {
-              el.innerHTML = translations.en[key];
-            } else {
-              el.innerHTML = originals[key];
-            }
-          });
-
+          applyLang(currentLang);
           document.documentElement.classList.remove("is-switching-lang");
         }, 200);
       });
