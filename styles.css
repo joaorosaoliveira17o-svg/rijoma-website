@@ -118,6 +118,31 @@ h3 {
   color: var(--white);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-toggle {
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
