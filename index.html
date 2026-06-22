@@ -10,6 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/rijoma/processed/hero-machine.jpg">
     <meta property="og:locale" content="pt_PT">
+    <meta property="og:locale:alternate" content="en_GB">
     <script>document.documentElement.classList.add("has-js");</script>
     <link rel="icon" type="image/png" href="assets/rijoma/rijoma-symbol-header.png">
     <link rel="stylesheet" href="styles.css">
@@ -21,17 +22,20 @@
         <img class="brand-logo" src="assets/rijoma/rijoma-logo-header-no-tagline.png" alt="RIJOMA">
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
-        <span></span>
-        <span></span>
-      </button>
-
       <nav class="site-nav" data-nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#producao">Produção</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contactos">Contactos</a>
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#producao" data-i18n="nav.production">Produção</a>
+        <a href="#produtos" data-i18n="nav.products">Produtos</a>
+        <a href="#contactos" data-i18n="nav.contact">Contactos</a>
       </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle>EN</button>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="inicio">
@@ -45,24 +49,24 @@
         >
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content" data-reveal>
-          <p class="kicker">Minde, Portugal — desde 1986</p>
-          <h1>Produção portuguesa de malhas por encomenda.</h1>
-          <p>
+          <p class="kicker" data-i18n="hero.kicker">Minde, Portugal — desde 1986</p>
+          <h1 data-i18n="hero.title">Produção portuguesa de malhas por encomenda.</h1>
+          <p data-i18n="hero.desc">
             Fabricante de malhas retilíneas para colégios, empresas e instituições.
             Produção direta, com personalização, consistência e proximidade.
           </p>
-          <a class="button" href="#contactos">Contactar</a>
+          <a class="button" href="#contactos" data-i18n="hero.cta">Contactar</a>
         </div>
         <div class="hero-meta" aria-label="Resumo">
-          <span>Desde 1986</span>
-          <span>Produção por encomenda</span>
+          <span data-i18n="hero.since">Desde 1986</span>
+          <span data-i18n="hero.made">Produção por encomenda</span>
           <span>Minde, Portugal</span>
         </div>
       </section>
 
       <!-- STATEMENT -->
       <section class="statement" aria-label="Posicionamento" data-reveal>
-        <p>
+        <p data-i18n="statement">
           Especialistas em malha. Fabricante direto, com experiência em fardamento escolar,
           profissional e institucional.
         </p>
@@ -72,38 +76,38 @@
       <div class="image-strip" aria-label="Detalhes de produção" data-reveal>
         <figure>
           <img src="assets/rijoma/processed/hero-machine.jpg" alt="Máquina de tricotagem Rijoma em produção">
-          <figcaption>Equipamento industrial</figcaption>
+          <figcaption data-i18n="strip.1">Equipamento industrial</figcaption>
         </figure>
         <figure>
           <img src="assets/rijoma/processed/machine-angle.jpg" alt="Vista lateral de máquina têxtil com fios">
-          <figcaption>Produção de malha retilínea</figcaption>
+          <figcaption data-i18n="strip.2">Produção de malha retilínea</figcaption>
         </figure>
         <figure>
           <img src="assets/rijoma/processed/cones-close.jpg" alt="Close-up de cones de fio usados na produção">
-          <figcaption>Matéria-prima e fios</figcaption>
+          <figcaption data-i18n="strip.3">Matéria-prima e fios</figcaption>
         </figure>
       </div>
 
       <!-- SOBRE -->
       <section class="section about" id="sobre">
         <div class="section-copy" data-reveal>
-          <p class="kicker">Sobre</p>
-          <h2>Uma empresa industrial com mais de 35 anos de experiência em malhas.</h2>
-          <p>
+          <p class="kicker" data-i18n="about.kicker">Sobre</p>
+          <h2 data-i18n="about.title">Uma empresa industrial com mais de 35 anos de experiência em malhas.</h2>
+          <p data-i18n="about.p1">
             A Rijoma é uma empresa familiar portuguesa, fundada em 1986 em Minde.
             Ao longo de décadas, construiu um conhecimento técnico sólido em produção
             de malhas retilíneas, trabalhando diretamente com colégios, empresas,
             instituições e marcas privadas.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             A produção é feita por encomenda, com atenção ao detalhe da malha,
             à consistência das peças e à proximidade com cada cliente.
           </p>
           <div class="technical-points" aria-label="Resumo técnico">
-            <span>Malha retilínea por encomenda</span>
-            <span>Fardamento escolar e profissional</span>
-            <span>Produção portuguesa — Minde</span>
-            <span>Relação direta com o fabricante</span>
+            <span data-i18n="about.t1">Malha retilínea por encomenda</span>
+            <span data-i18n="about.t2">Fardamento escolar e profissional</span>
+            <span data-i18n="about.t3">Produção portuguesa — Minde</span>
+            <span data-i18n="about.t4">Relação direta com o fabricante</span>
           </div>
         </div>
         <figure class="editorial-image" data-reveal>
@@ -117,9 +121,9 @@
           <img src="assets/rijoma/processed/machine-angle.jpg" alt="Máquina têxtil com fios em operação">
         </div>
         <div class="production-copy" data-reveal>
-          <p class="kicker">Produção</p>
-          <h2>Capacidade produtiva com flexibilidade de projeto.</h2>
-          <p>
+          <p class="kicker" data-i18n="prod.kicker">Produção</p>
+          <h2 data-i18n="prod.title">Capacidade produtiva com flexibilidade de projeto.</h2>
+          <p data-i18n="prod.desc">
             A produção combina equipamento industrial, conhecimento técnico acumulado
             e capacidade de resposta a projetos específicos. O objetivo é consistente:
             transformar fio em peças de malha bem acabadas, ajustadas às necessidades
@@ -127,16 +131,16 @@
           </p>
           <div class="capabilities" aria-label="Áreas de produção">
             <article>
-              <span>Malha retilínea</span>
-              <p>Produção por encomenda com controlo de fio, ponto, composição e acabamento.</p>
+              <span data-i18n="prod.c1.title">Malha retilínea</span>
+              <p data-i18n="prod.c1.desc">Produção por encomenda com controlo de fio, ponto, composição e acabamento.</p>
             </article>
             <article>
-              <span>Fardamento</span>
-              <p>Experiência em peças para colégios, empresas e instituições. Personalização disponível.</p>
+              <span data-i18n="prod.c2.title">Fardamento</span>
+              <p data-i18n="prod.c2.desc">Experiência em peças para colégios, empresas e instituições. Personalização disponível.</p>
             </article>
             <article>
-              <span>Desenvolvimento</span>
-              <p>Criação de peças conforme projeto: cores, composições, medidas e acabamentos.</p>
+              <span data-i18n="prod.c3.title">Desenvolvimento</span>
+              <p data-i18n="prod.c3.desc">Criação de peças conforme projeto: cores, composições, medidas e acabamentos.</p>
             </article>
           </div>
         </div>
@@ -146,47 +150,47 @@
       <section class="detail-band" aria-label="Qualidade têxtil">
         <img src="assets/rijoma/processed/thread-detail.jpg" alt="Close-up de cones de fio branco">
         <div>
-          <p class="kicker">Detalhe</p>
-          <p>Fio, textura, ponto e acabamento: a qualidade está em cada etapa da produção.</p>
+          <p class="kicker" data-i18n="detail.kicker">Detalhe</p>
+          <p data-i18n="detail.text">Fio, textura, ponto e acabamento: a qualidade está em cada etapa da produção.</p>
         </div>
       </section>
 
       <!-- PRODUTOS -->
       <section class="section products" id="produtos">
         <div class="section-heading" data-reveal>
-          <p class="kicker">Produtos</p>
-          <h2>Malhas para diferentes projetos e clientes.</h2>
-          <p>Produção por encomenda. Personalização de cor, composição e acabamentos.</p>
+          <p class="kicker" data-i18n="products.kicker">Produtos</p>
+          <h2 data-i18n="products.title">Malhas para diferentes projetos e clientes.</h2>
+          <p data-i18n="products.desc">Produção por encomenda. Personalização de cor, composição e acabamentos.</p>
         </div>
         <div class="products-layout">
           <figure class="products-visual" data-reveal>
             <img src="assets/rijoma/processed/cones-close.jpg" alt="Cones de fio para produção de malha">
-            <figcaption>Do fio ao produto final</figcaption>
+            <figcaption data-i18n="products.caption">Do fio ao produto final</figcaption>
           </figure>
           <div class="product-list" data-reveal>
             <article>
               <h3>Pullovers</h3>
-              <p>Decote em V, gola redonda ou half-zip. Composição e cor conforme encomenda.</p>
+              <p data-i18n="products.p1">Decote em V, gola redonda ou half-zip. Composição e cor conforme encomenda.</p>
             </article>
             <article>
               <h3>Cardigans</h3>
-              <p>Com abertura frontal, em diferentes pontos, pesos e composições de fio.</p>
+              <p data-i18n="products.p2">Com abertura frontal, em diferentes pontos, pesos e composições de fio.</p>
             </article>
             <article>
-              <h3>Coletes de malha</h3>
-              <p>Versáteis para fardamento escolar e corporativo. Personalizáveis com bordado.</p>
+              <h3 data-i18n="products.h3">Coletes de malha</h3>
+              <p data-i18n="products.p3">Versáteis para fardamento escolar e corporativo. Personalizáveis com bordado.</p>
             </article>
             <article>
               <h3>Half-zips</h3>
-              <p>Peça de malha com fecho parcial. Acabamento técnico e aspeto profissional.</p>
+              <p data-i18n="products.p4">Peça de malha com fecho parcial. Acabamento técnico e aspeto profissional.</p>
             </article>
             <article>
-              <h3>Cachecóis e acessórios</h3>
-              <p>Produção complementar em malha para completar kits de fardamento.</p>
+              <h3 data-i18n="products.h5">Cachecóis e acessórios</h3>
+              <p data-i18n="products.p5">Produção complementar em malha para completar kits de fardamento.</p>
             </article>
             <article>
-              <h3>Peças sob especificação</h3>
-              <p>Desenvolvimento técnico completo: fio, ponto, medidas, composição e acabamento.</p>
+              <h3 data-i18n="products.h6">Peças sob especificação</h3>
+              <p data-i18n="products.p6">Desenvolvimento técnico completo: fio, ponto, medidas, composição e acabamento.</p>
             </article>
           </div>
         </div>
@@ -195,33 +199,33 @@
       <!-- PERSONALIZAÇÃO -->
       <section class="section customization" id="personalizacao">
         <div class="section-heading" data-reveal>
-          <p class="kicker">Personalização</p>
-          <h2>Peças desenvolvidas conforme o projeto.</h2>
+          <p class="kicker" data-i18n="custom.kicker">Personalização</p>
+          <h2 data-i18n="custom.title">Peças desenvolvidas conforme o projeto.</h2>
         </div>
         <div class="custom-grid" data-reveal>
           <div class="custom-item">
-            <span class="custom-label">Bordado</span>
-            <p>No peito, na manga ou no corpo. Aplicação do logótipo ou identidade visual do cliente.</p>
+            <span class="custom-label" data-i18n="custom.l1">Bordado</span>
+            <p data-i18n="custom.d1">No peito, na manga ou no corpo. Aplicação do logótipo ou identidade visual do cliente.</p>
           </div>
           <div class="custom-item">
-            <span class="custom-label">Etiqueta personalizada</span>
-            <p>Etiqueta de marca própria integrada na peça, conforme especificação do cliente.</p>
+            <span class="custom-label" data-i18n="custom.l2">Etiqueta personalizada</span>
+            <p data-i18n="custom.d2">Etiqueta de marca própria integrada na peça, conforme especificação do cliente.</p>
           </div>
           <div class="custom-item">
-            <span class="custom-label">Cores e contrastes</span>
-            <p>Cores conforme padrão do cliente. Riscas, contrastes e combinações disponíveis.</p>
+            <span class="custom-label" data-i18n="custom.l3">Cores e contrastes</span>
+            <p data-i18n="custom.d3">Cores conforme padrão do cliente. Riscas, contrastes e combinações disponíveis.</p>
           </div>
           <div class="custom-item">
-            <span class="custom-label">Composição de fio</span>
-            <p>100% acrílico, misto lã/acrílico, algodão/acrílico ou outras composições sob consulta.</p>
+            <span class="custom-label" data-i18n="custom.l4">Composição de fio</span>
+            <p data-i18n="custom.d4">100% acrílico, misto lã/acrílico, algodão/acrílico ou outras composições sob consulta.</p>
           </div>
           <div class="custom-item">
-            <span class="custom-label">Acabamentos</span>
-            <p>Punhos, barras, golas, cotoveleiras e zips conforme desenho da peça.</p>
+            <span class="custom-label" data-i18n="custom.l5">Acabamentos</span>
+            <p data-i18n="custom.d5">Punhos, barras, golas, cotoveleiras e zips conforme desenho da peça.</p>
           </div>
           <div class="custom-item">
-            <span class="custom-label">Quantidades</span>
-            <p>Produção ajustada às necessidades do projeto. Condições definidas conforme encomenda.</p>
+            <span class="custom-label" data-i18n="custom.l6">Quantidades</span>
+            <p data-i18n="custom.d6">Produção ajustada às necessidades do projeto. Condições definidas conforme encomenda.</p>
           </div>
         </div>
       </section>
@@ -229,9 +233,9 @@
       <!-- CONTACTOS -->
       <section class="contact-section" id="contactos">
         <div class="contact-copy" data-reveal>
-          <p class="kicker">Contactos</p>
-          <h2>Vamos falar sobre o seu projeto?</h2>
-          <p>
+          <p class="kicker" data-i18n="contact.kicker">Contactos</p>
+          <h2 data-i18n="contact.title">Vamos falar sobre o seu projeto?</h2>
+          <p data-i18n="contact.desc">
             Para pedidos de produção, fardamento escolar, corporativo ou institucional,
             entre em contacto diretamente com a Rijoma.
           </p>
@@ -241,31 +245,27 @@
               <a href="mailto:geral@rijoma.pt">geral@rijoma.pt</a>
             </div>
             <div class="contact-way">
-              <span class="contact-way-label">Telefone</span>
+              <span class="contact-way-label" data-i18n="contact.phone">Telefone</span>
               <a href="tel:+351249840603">+351 249 840 603</a>
             </div>
             <div class="contact-way">
-              <span class="contact-way-label">Morada</span>
+              <span class="contact-way-label" data-i18n="contact.address">Morada</span>
               <span>R. Cândido Alves Fiel, 345<br>2395-140 Minde, Portugal</span>
-            </div>
-            <div class="contact-way">
-              <span class="contact-way-label">Website</span>
-              <a href="https://rijoma.pt" target="_blank" rel="noopener">rijoma.pt</a>
             </div>
           </div>
         </div>
         <div class="contact-panel-wrap" data-reveal>
           <div class="contact-panel-block">
             <p class="panel-label">Schoolwear</p>
-            <p>Pullovers, cardigans, coletes e half-zips para colégios e escolas.</p>
+            <p data-i18n="contact.panel1">Pullovers, cardigans, coletes e half-zips para colégios e escolas.</p>
           </div>
           <div class="contact-panel-block">
-            <p class="panel-label">Fardamento corporativo</p>
-            <p>Peças de malha para empresas e instituições com identidade visual própria.</p>
+            <p class="panel-label" data-i18n="contact.panel2.label">Fardamento corporativo</p>
+            <p data-i18n="contact.panel2">Peças de malha para empresas e instituições com identidade visual própria.</p>
           </div>
           <div class="contact-panel-block">
-            <p class="panel-label">Marcas privadas</p>
-            <p>Produção por encomenda com etiqueta e especificação do cliente.</p>
+            <p class="panel-label" data-i18n="contact.panel3.label">Marcas privadas</p>
+            <p data-i18n="contact.panel3">Produção por encomenda com etiqueta e especificação do cliente.</p>
           </div>
         </div>
       </section>
@@ -282,11 +282,148 @@
         <a href="tel:+351249840603">+351 249 840 603</a>
         <span>Minde, Portugal</span>
       </div>
-      <span class="footer-copy">Produção portuguesa de malhas desde 1986</span>
+      <span class="footer-copy" data-i18n="footer">Produção portuguesa de malhas desde 1986</span>
     </footer>
 
     <script>
-      // Nav toggle
+      // ─── i18n ───
+      const translations = {
+        en: {
+          "nav.about": "About",
+          "nav.production": "Production",
+          "nav.products": "Products",
+          "nav.contact": "Contact",
+          "hero.kicker": "Minde, Portugal — since 1986",
+          "hero.title": "Portuguese knitwear made to order.",
+          "hero.desc": "Manufacturer of fully-fashioned knitwear for schools, companies and institutions. Direct production with customisation, consistency and close partnership.",
+          "hero.cta": "Get in touch",
+          "hero.since": "Since 1986",
+          "hero.made": "Made to order",
+          "statement": "Knitwear specialists. Direct manufacturer with decades of experience in school, corporate and institutional uniforms.",
+          "strip.1": "Industrial equipment",
+          "strip.2": "Fully-fashioned knitwear",
+          "strip.3": "Raw materials & yarn",
+          "about.kicker": "About",
+          "about.title": "An industrial company with over 35 years of knitwear expertise.",
+          "about.p1": "Rijoma is a Portuguese family business founded in 1986 in Minde. Over the decades it has built deep technical knowledge in fully-fashioned knitwear, working directly with schools, companies, institutions and private labels.",
+          "about.p2": "Production is made to order, with close attention to knit detail, garment consistency and a direct relationship with each client.",
+          "about.t1": "Fully-fashioned knitwear to order",
+          "about.t2": "School & corporate uniforms",
+          "about.t3": "Made in Portugal — Minde",
+          "about.t4": "Direct from the manufacturer",
+          "prod.kicker": "Production",
+          "prod.title": "Production capacity with project flexibility.",
+          "prod.desc": "Our production combines industrial equipment, accumulated technical knowledge and the ability to respond to specific projects. The goal is consistent: turning yarn into well-finished knitwear, tailored to each client's needs.",
+          "prod.c1.title": "Fully-fashioned knitwear",
+          "prod.c1.desc": "Made-to-order production with control over yarn, stitch, composition and finish.",
+          "prod.c2.title": "Uniforms",
+          "prod.c2.desc": "Experience in garments for schools, companies and institutions. Customisation available.",
+          "prod.c3.title": "Development",
+          "prod.c3.desc": "Garment creation to spec: colours, compositions, sizes and finishes.",
+          "detail.kicker": "Detail",
+          "detail.text": "Yarn, texture, stitch and finish: quality is present at every stage of production.",
+          "products.kicker": "Products",
+          "products.title": "Knitwear for different projects and clients.",
+          "products.desc": "Made to order. Colour, composition and finish customisation.",
+          "products.caption": "From yarn to finished product",
+          "products.p1": "V-neck, crew neck or half-zip. Composition and colour to order.",
+          "products.p2": "Front-opening, in different stitches, weights and yarn compositions.",
+          "products.h3": "Knitted vests",
+          "products.p3": "Versatile for school and corporate uniforms. Customisable with embroidery.",
+          "products.p4": "Knitwear with partial zip. Technical finish and professional look.",
+          "products.h5": "Scarves & accessories",
+          "products.p5": "Complementary knitwear production to complete uniform kits.",
+          "products.h6": "Custom-spec garments",
+          "products.p6": "Full technical development: yarn, stitch, sizing, composition and finish.",
+          "custom.kicker": "Customisation",
+          "custom.title": "Garments developed to your project.",
+          "custom.l1": "Embroidery",
+          "custom.d1": "On the chest, sleeve or body. Application of the client's logo or visual identity.",
+          "custom.l2": "Private label",
+          "custom.d2": "Own-brand label integrated into the garment, to client specification.",
+          "custom.l3": "Colours & contrasts",
+          "custom.d3": "Colours to client standard. Stripes, contrasts and combinations available.",
+          "custom.l4": "Yarn composition",
+          "custom.d4": "100% acrylic, wool/acrylic blend, cotton/acrylic or other compositions on request.",
+          "custom.l5": "Finishes",
+          "custom.d5": "Cuffs, hems, collars, elbow patches and zips to garment design.",
+          "custom.l6": "Quantities",
+          "custom.d6": "Production adjusted to project needs. Terms defined per order.",
+          "contact.kicker": "Contact",
+          "contact.title": "Let's talk about your project?",
+          "contact.desc": "For production orders, school, corporate or institutional uniforms, get in touch directly with Rijoma.",
+          "contact.phone": "Phone",
+          "contact.address": "Address",
+          "contact.panel1": "Pullovers, cardigans, vests and half-zips for schools and colleges.",
+          "contact.panel2.label": "Corporate uniforms",
+          "contact.panel2": "Knitwear for companies and institutions with their own visual identity.",
+          "contact.panel3.label": "Private labels",
+          "contact.panel3": "Made-to-order production with client labelling and specification.",
+          "footer": "Portuguese knitwear manufacturer since 1986"
+        }
+      };
+
+      let currentLang = "pt";
+      const originals = {};
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        originals[el.getAttribute("data-i18n")] = el.innerHTML;
+      });
+
+      const langBtn = document.querySelector("[data-lang-toggle]");
+      // Lock section heights to the max of both languages so layout never shifts
+      const sections = document.querySelectorAll(
+        ".hero-content, .statement, .section-copy, .production-copy, .detail-band div, .section-heading, .product-list, .custom-grid, .contact-copy, .contact-panel-wrap"
+      );
+
+      function applyLang(lang) {
+        document.documentElement.lang = lang;
+        langBtn.textContent = lang === "pt" ? "EN" : "PT";
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (lang === "en" && translations.en[key]) {
+            el.innerHTML = translations.en[key];
+          } else {
+            el.innerHTML = originals[key];
+          }
+        });
+      }
+
+      // Measure both languages and lock to the taller height
+      (function lockHeights() {
+        sections.forEach((s) => s.style.minHeight = "");
+        const ptHeights = [...sections].map((s) => s.offsetHeight);
+        applyLang("en");
+        const enHeights = [...sections].map((s) => s.offsetHeight);
+        applyLang("pt");
+        sections.forEach((s, i) => {
+          s.style.minHeight = Math.max(ptHeights[i], enHeights[i]) + "px";
+        });
+      })();
+
+      window.addEventListener("resize", () => {
+        sections.forEach((s) => s.style.minHeight = "");
+        const h1 = [...sections].map((s) => s.offsetHeight);
+        const prevLang = currentLang;
+        applyLang(currentLang === "pt" ? "en" : "pt");
+        const h2 = [...sections].map((s) => s.offsetHeight);
+        applyLang(prevLang);
+        sections.forEach((s, i) => {
+          s.style.minHeight = Math.max(h1[i], h2[i]) + "px";
+        });
+      });
+
+      langBtn.addEventListener("click", () => {
+        document.documentElement.classList.add("is-switching-lang");
+
+        setTimeout(() => {
+          currentLang = currentLang === "pt" ? "en" : "pt";
+          applyLang(currentLang);
+          document.documentElement.classList.remove("is-switching-lang");
+        }, 200);
+      });
+
+      // ─── Nav toggle ───
       const toggle = document.querySelector("[data-nav-toggle]");
       const nav = document.querySelector("[data-nav]");
       const header = document.querySelector("[data-header]");
@@ -303,14 +440,14 @@
         }
       });
 
-      // Scroll header
+      // ─── Scroll header ───
       const onScroll = () => {
         header.classList.toggle("is-scrolled", window.scrollY > 24);
       };
       onScroll();
       window.addEventListener("scroll", onScroll, { passive: true });
 
-      // Reveal on scroll
+      // ─── Reveal on scroll ───
       const revealItems = document.querySelectorAll("[data-reveal]");
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
