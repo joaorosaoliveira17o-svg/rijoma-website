@@ -89,8 +89,8 @@ h3 {
   align-items: center;
   color: var(--white);
   text-decoration: none;
-  width: 86px;
-  height: 58px;
+  width: 95px;
+  height: 64px;
 }
 
 .brand-logo {
@@ -906,7 +906,7 @@ html.is-switching-lang [data-i18n] {
 
 @media (max-width: 560px) {
   .site-header { padding-inline: 14px; }
-  .brand { width: 76px; height: 52px; }
+  .brand { width: 84px; height: 57px; }
 
   .hero-content {
     width: calc(100% - 28px);
