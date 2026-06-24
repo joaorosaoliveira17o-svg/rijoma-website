@@ -89,8 +89,8 @@ h3 {
   align-items: center;
   color: var(--white);
   text-decoration: none;
-  width: 86px;
-  height: 58px;
+  width: 95px;
+  height: 64px;
 }
 
 .brand-logo {
@@ -103,6 +103,7 @@ h3 {
 .site-nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
   gap: clamp(18px, 3vw, 38px);
   color: rgba(255, 255, 255, 0.78);
   font-size: 13px;
@@ -122,6 +123,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: clamp(14px, 2vw, 28px);
 }
 
 .lang-toggle {
@@ -204,7 +206,7 @@ h3 {
 .hero-content h1 {
   max-width: 680px;
   margin: 0 0 22px;
-  font-size: clamp(40px, 6vw, 86px);
+  font-size: clamp(38px, 5.4vw, 76px);
   font-weight: 500;
   line-height: 0.96;
   letter-spacing: 0;
@@ -904,7 +906,7 @@ html.is-switching-lang [data-i18n] {
 
 @media (max-width: 560px) {
   .site-header { padding-inline: 14px; }
-  .brand { width: 76px; height: 52px; }
+  .brand { width: 84px; height: 57px; }
 
   .hero-content {
     width: calc(100% - 28px);
