@@ -1,6 +1,6 @@
 # Rijoma — Produção Portuguesa de Malhas
 
-Site institucional da **Rijoma, Lda**, fabricante português de malhas retilíneas desde 1986, em Minde.
+Site institucional da **Rijoma, Lda**, fabricante português de malhas desde 1986, em Minde.
 
 ## Estrutura
 

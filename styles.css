@@ -103,6 +103,7 @@ h3 {
 .site-nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
   gap: clamp(18px, 3vw, 38px);
   color: rgba(255, 255, 255, 0.78);
   font-size: 13px;
@@ -122,6 +123,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: clamp(14px, 2vw, 28px);
 }
 
 .lang-toggle {
